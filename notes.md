@@ -15,14 +15,19 @@ There's one more command you need and then you're set! Yes, it's that easy!
 `man` is used to see the 'manual' page for any command you want to get more
 information about.
 
+###### `tldr` turns out to be an interesting supplement to man
+
 ## A few more commands might be helpful tho...
 
-`mkdir`
-`cp` (mention -t)
-`mv` (mention -t)
-`rm`
+```
+mkdir (mention history events)
+cp (mention -t)
+mv (mention -t)
+rm
+```
 
 `find` - super useful but I'm no expert
+
 `tree` - simple tree view, but doesn't come installed
 
 ## Handy things
@@ -101,9 +106,10 @@ that makes it so that every time I `cd` it automatically `ls`s for me:
 ```bash
 function cd() {
   emulate -LR zsh
-  builtin cd $@ &&
+    builtin cd $@ &&
     ls -a
 }
 ```
 
 <!-- vim: set tw=80:-->
+history events
