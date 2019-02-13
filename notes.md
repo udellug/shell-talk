@@ -10,12 +10,14 @@ what directory you're in, us `pwd`
 To change directories, use `cd`. What directories are there? Check with `ls`!
 Use `ls -l` to see permissions and `chmod` to alter permissions.
 
+## RTFM
+
 There's one more command you need and then you're set! Yes, it's that easy!
 
 `man` is used to see the 'manual' page for any command you want to get more
 information about.
 
-###### `tldr` turns out to be an interesting supplement to man
+`tldr` turns out to be an interesting supplement to man
 
 ## A few more commands might be helpful tho...
 
@@ -26,19 +28,30 @@ mv (mention -t)
 rm
 ```
 
-`find` - super useful but I'm no expert
+`find` - can do anything
 
 `tree` - simple tree view, but doesn't come installed
 
-## Handy things
+## Tab completion
 
-Tab completion! Use it! (zsh does it better)
+Use it! (zsh does it better)
+
+## Globbing
 
 Globbing - * and ?
 * matches any number of any characters
 ? matches one of any character
 
-## Everything is a file (sorta)
+## Unix philosophy
+
+[The UNIX philosophy was] summarized by Peter H. Salus in A Quarter-Century of
+Unix (1994):
+
+ - Write programs that do one thing and do it well.
+ - Write programs to work together.
+ - Write programs to handle text streams, because that is a universal interface.
+
+## Everything is a file
 
 Need random data? Read from /dev/urandom: `cat /dev/urandom`
 
@@ -47,14 +60,9 @@ Need a lot of 0's to erase your harddrive? /dev/zero has your back
 Hard drives, USBs, CD drives, etc are all 'file's that you can mount into your
 filesystem and access just like any other.
 
+Processes are files! Get yours today at `/proc`!
+
 ## Pipes
-
-[The UNIX philosophy was] summarized by Peter H. Salus in A Quarter-Century of
-Unix (1994):
-
- - Write programs that do one thing and do it well.
- - Write programs to work together.
- - Write programs to handle text streams, because that is a universal interface.
 
 So the shell allows you to make your programs work together. You can send the
 output (stdout) of one program to the input (stdin) of another program using the
@@ -95,7 +103,7 @@ input of a program.
 
 `>` or `>>` or `>&` or `>>&`
 
-the `&` includes stderr.
+the `&` includes stderr. the `|` can also include `&`
 
 ## Scripting
 
@@ -111,5 +119,8 @@ function cd() {
 }
 ```
 
+## Event Designators, Word Designators, Modifiers
+
+`man bash` then `/Event Designators`
+
 <!-- vim: set tw=80:-->
-history events
