@@ -1,8 +1,10 @@
-# An intro to the shell
+# Frankenstein, by Mary Shelly
 
-## Shell vs (bash|zsh|ksh|fish(yuck!))
+## Shell vs (bash|zsh|ksh|fish(yuck!)|cmd.exe(lol))
 
-## You're always in a directory
+We're talking about shells that at least attempt to be POSIX compliant.
+
+## File Navigation
 
 Every program is always in a directory and your shell is no different. To check
 what directory you're in, us `pwd`
@@ -19,7 +21,7 @@ information about.
 
 `tldr` turns out to be an interesting supplement to man
 
-## A few more commands might be helpful tho...
+## Some "core" "utils"
 
 ```
 mkdir (mention history events)
@@ -27,6 +29,8 @@ cp (mention -t)
 mv (mention -t)
 rm
 ```
+
+## Where Is \<x\>?
 
 `find` - can do anything
 
@@ -55,7 +59,7 @@ Unix (1994):
 
 Need random data? Read from /dev/urandom: `cat /dev/urandom`
 
-Need a lot of 0's to erase your harddrive? /dev/zero has your back
+Need a lot of 0's to erase your hard drive? /dev/zero has your back
 
 Hard drives, USBs, CD drives, etc are all 'file's that you can mount into your
 filesystem and access just like any other.
