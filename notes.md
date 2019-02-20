@@ -1,4 +1,4 @@
-# Frankenstein, by Mary Shelly
+# Frankenstein, by Mary SHELLy
 
 ## Shell vs (bash|zsh|ksh|fish(yuck!)|cmd.exe(lol))
 
